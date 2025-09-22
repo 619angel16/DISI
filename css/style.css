@@ -199,6 +199,53 @@ h2 {
   opacity: 0.7;
 }
 
+/* Meeting Places */
+.meeting-places-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.meeting-places-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.places-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.place-item {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+}
+
+.place-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.place-item p {
+  color: #6c757d;
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* Footer */
 footer {
   background-color: #000000;
