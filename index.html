@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
+  <title>Página Principal</title>
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -30,6 +30,8 @@
       <li><a href="#about">Nosotros</a></li>
       <li><a href="#services">Servicios</a></li>
       <li><a href="#team">Equipo</a></li>
+      <li><a href="#schedule">Horarios</a></li>
+      <li><a href="#meeting-places">Lugares de Reunión</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
   </div>
@@ -49,6 +51,10 @@
         Nos especializamos en desarrollo web, aplicaciones móviles y soluciones empresariales,
         siempre utilizando las mejores prácticas y tecnologías más actuales del mercado.
       </p>
+      <div class="lab-info" style="margin-top: 30px; padding: 20px; background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff;">
+        <h3 style="color: #007bff; margin-bottom: 15px;">Información Académica</h3>
+        <p>Pertenecemos al <strong>Laboratorio 2, Grupo B</strong> con asistencia los miércoles de <strong>13:00 a 14:15</strong>.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -68,10 +74,6 @@
         <p>Desarrollo nativo e híbrido para iOS y Android. Apps intuitivas que conectan con tus usuarios.</p>
       </div>
       <div class="service-card">
-        <h3>Backend & APIs</h3>
-        <p>Arquitecturas robustas y escalables. Desarrollo de APIs RESTful y servicios en la nube.</p>
-      </div>
-      <div class="service-card">
         <h3>Consultoría Técnica</h3>
         <p>Asesoramiento en tecnologías, arquitectura de software y mejores prácticas de desarrollo.</p>
       </div>
@@ -81,7 +83,7 @@
 
 <!-- Team Section -->
 <section id="team">
-  <div class="container">
+  <div class="container_team">
     <h2>Nuestro Equipo</h2>
     <div class="team-grid">
       <div class="team-member" onclick="window.location.href = 'member_A.html'">
@@ -103,16 +105,103 @@
         <p>Arquitecta de sistemas escalables. Especialista en Python, Java y tecnologías cloud.</p>
       </div>
       <div class="team-member" onclick="window.location.href = 'member_D.html'">
-        <div class="member-photo">D</div>
+        <div class="member-photo">David</div>
         <h3>David</h3>
-        <div class="role">DevOps Engineer</div>
-        <p>Automatización, CI/CD y infraestructura como código. Experto en AWS y Docker.</p>
+        <div class="role">Subida de Ficheros</div>
+        <p>Experto en Odoo y MySQL.</p>
       </div>
       <div class="team-member" onclick="window.location.href = 'member_G.html'">
         <div class="member-photo">G</div>
         <h3>Gisela</h3>
         <div class="role">DevOps Engineer</div>
         <p>Automatización, CI/CD y infraestructura como código. Experto en AWS y Docker.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Schedule Section -->
+<section id="schedule">
+  <div class="container">
+    <h2>Horarios de Disponibilidad del Equipo</h2>
+    <div class="schedule-table">
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <thead>
+          <tr style="background-color: #007bff; color: white;">
+            <th style="padding: 15px; border: 1px solid #ddd; text-align: center; font-weight: bold;">Día</th>
+            <th style="padding: 15px; border: 1px solid #ddd; text-align: center; font-weight: bold;">Mañana</th>
+            <th style="padding: 15px; border: 1px solid #ddd; text-align: center; font-weight: bold;">Tarde</th>
+            <th style="padding: 15px; border: 1px solid #ddd; text-align: center; font-weight: bold;">Noche</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color: #f8f9fa;">
+            <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; text-align: center;">Lunes</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">9:00 - 12:00</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">14:00 - 18:00</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center; color: #dc3545;">No disponible</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; text-align: center; background-color: #f8f9fa;">Martes</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">9:00 - 12:00</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">14:00 - 18:00</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">19:00 - 21:00</td>
+          </tr>
+          <tr style="background-color: #f8f9fa;">
+            <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; text-align: center;">Miércoles</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">9:00 - 12:00</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center; background-color: #d4edda; color: #155724; font-weight: bold;">13:00 - 14:15 (Lab 2)</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center; color: #dc3545;">No disponible</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; text-align: center; background-color: #f8f9fa;">Jueves</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">9:00 - 12:00</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">14:00 - 18:00</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">19:00 - 21:00</td>
+          </tr>
+          <tr style="background-color: #f8f9fa;">
+            <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; text-align: center;">Viernes</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">9:00 - 12:00</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">14:00 - 17:00</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center; color: #dc3545;">No disponible</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; text-align: center; background-color: #f8f9fa;">Sábado</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">10:00 - 13:00</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center; color: #dc3545;">No disponible</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center; color: #dc3545;">No disponible</td>
+          </tr>
+          <tr style="background-color: #f8f9fa;">
+            <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; text-align: center;">Domingo</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center; color: #dc3545;">No disponible</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center; color: #dc3545;">No disponible</td>
+            <td style="padding: 12px; border: 1px solid #ddd; text-align: center; color: #dc3545;">No disponible</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 15px; font-style: italic; color: #6c757d; text-align: center;">
+        * El horario destacado en verde corresponde a la asistencia obligatoria al Laboratorio 2, Grupo B
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Meeting Places Section -->
+<section id="meeting-places">
+  <div class="container">
+    <h2>Lugares de Reunión</h2>
+    <div class="meeting-places-content">
+      <p>Nos reunimos en diferentes lugares según la naturaleza de la reunión y la conveniencia del equipo.</p>
+      <div class="places-list">
+        <div class="place-item">
+          <h4>🏫 Universidad Politécnica</h4>
+          <p>Para reuniones académicas, laboratorios y presentaciones formales</p>
+        </div>
+        <div class="place-item">
+          <h4>💬 Discord</h4>
+          <p>Para reuniones virtuales, brainstorming y coordinación diaria del equipo</p>
+        </div>
       </div>
     </div>
   </div>
@@ -128,11 +217,7 @@
       <div class="contact-info">
         <div class="contact-item">
           <h4>Email</h4>
-          <p>contacto@devteam.com</p>
-        </div>
-        <div class="contact-item">
-          <h4>Teléfono</h4>
-          <p>+34 123 456 789</p>
+          <p>jperezloy@alumnos.unex.es</p>
         </div>
         <div class="contact-item">
           <h4>Ubicación</h4>

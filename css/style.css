@@ -199,6 +199,93 @@ h2 {
   opacity: 0.7;
 }
 
+/* Meeting Places */
+.meeting-places-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.meeting-places-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.places-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.place-item {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+}
+
+.place-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.place-item p {
+  color: #6c757d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Hobbies */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hobby-item {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hobby-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hobby-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.hobby-item p {
+  color: #6c757d;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
 /* Footer */
 footer {
   background-color: #000000;
@@ -476,6 +563,95 @@ footer p {
   justify-content: center;
   margin: 0 auto 1rem;
   font-size: 1.5rem;
+}
+
+/* Horario Table */
+.horario-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 1rem;
+}
+
+.horario-table th,
+.horario-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.horario-table th {
+  background: #f5f5f5;
+  color: #333;
+  font-weight: 600;
+}
+
+.horario-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.horario-table .disponible {
+  background-color: #4caf50; /* verde */
+  color: #fff;
+  font-weight: bold;
+}
+
+.horario-table .no-disponible {
+  background-color: #f44336;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Centrar el título y la tabla */
+#horario .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#horario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Hobbies Section */
+#hobbies ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#hobbies li {
+  background: linear-gradient(90deg, #e3f2fd 0%, #f1f8e9 100%);
+  color: #1565c0;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.07);
+  transition: background 0.3s, transform 0.3s;
+  border: 1px solid #bbdefb;
+  letter-spacing: 1px;
+}
+
+#hobbies li:hover {
+  background: linear-gradient(90deg, #bbdefb 0%, #c8e6c9 100%);
+  transform: translateY(-2px) scale(1.03);
+  color: #388e3c;
+}
+
+/* Centrar el título y la lista */
+#hobbies .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Responsive */
