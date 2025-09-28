@@ -252,6 +252,96 @@ h2 {
   margin: 0;
 }
 
+/* Sanctions */
+.sanctions-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sanctions-content > p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.sanctions-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.sanction-item {
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid;
+}
+
+.sanction-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sanction-item.warning {
+  background-color: #fff3cd;
+  border-left-color: #ffc107;
+}
+
+.sanction-item.minor {
+  background-color: #d1ecf1;
+  border-left-color: #17a2b8;
+}
+
+.sanction-item.major {
+  background-color: #f8d7da;
+  border-left-color: #dc3545;
+}
+
+.sanction-item.severe {
+  background-color: #f5c6cb;
+  border-left-color: #721c24;
+}
+
+.sanction-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sanction-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.sanction-item p {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.sanction-detail {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.sanctions-note {
+  background-color: #e7f3ff;
+  border: 1px solid #b3d7ff;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.sanctions-note p {
+  margin: 0;
+  color: #0066cc;
+  font-size: 0.95rem;
+}
+
 /* Hobbies */
 .hobbies-grid {
   display: grid;
