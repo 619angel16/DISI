@@ -494,6 +494,60 @@ footer p {
   opacity: 0.6;
 }
 
+/* Contact Form */
+.contact-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0078d7;
+  outline: none;
+}
+
+.contact-form .btn {
+  background: #0078d7;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.contact-form .btn:hover {
+  background: #005fa3;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header h1 {
@@ -513,7 +567,33 @@ footer p {
   .team-grid {
     grid-template-columns: 1fr;
   }
+
+  .back-link {
+    position: static;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+
+  .profile-hero h1 {
+    font-size: 2rem;
+  }
+
+  .timeline::before {
+    left: 2rem;
+  }
+
+  .timeline-content {
+    width: calc(100% - 4rem);
+    margin-left: 4rem !important;
+    margin-right: 0 !important;
+  }
+
+  .timeline-date {
+    left: 2rem;
+    transform: translate(-50%, -50%);
+  }
 }
+
 /* Estilos específicos para el perfil del miembro */
 .profile-hero {
   background: linear-gradient(135deg, #000000 0%, #333333 100%);
